@@ -1,4 +1,7 @@
-@import "variables";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @font-face {
   font-family: "Bandeins Strange";
@@ -13,22 +16,24 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border-color: $border;
+  border-color: #181818;
   cursor: crosshair;
 }
 
 body{
-  font-family: $strange;
-  color: $text;
-  background:$background radial-gradient(
+  font-family: "Bandeins Strange";
+  color: #181818;
+  background:#F7F1E5 radial-gradient(
     rgba(0, 0, 0, 0.3) 8%,
     transparent 8%
   );
   background-position: 0% 0%;
   background-size: 2vmin 2vmin;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  color: $text;
+  color: #181818;
+  display: flex;
+  flex-direction: column;
 }
 
 ::selection{
@@ -44,4 +49,22 @@ body{
 ::-webkit-scrollbar-thumb {
   border-radius: 10px !important;
   background-color: #F0A04B !important;
+}
+
+.nav-section{
+  display: flex;
+  gap: 3rem;
+  border-left: 2px solid;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-section,
+#link-section{
+  flex-basis: calc(100% / 3);
+}
+
+#social-section,
+#contact-section{
+  flex-grow: 1;
 }
