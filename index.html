@@ -10,18 +10,18 @@
 </head>
 <body>
   <header>
-    <nav class="flex w-full border-b-2 h-[12vh] text-lg font-semibold">
+    <nav class="flex w-full h-[12vh] text-lg font-semibold">
       <div class="nav-section" id="logo-section">
         <a href="index.html">
           <h1 class="uppercase font-bold text-4xl">Thomas Doret-gaïsset</h1>
         </a>
       </div>
-
+      
       <div class="nav-section" id="link-section">
         <a href="index.html">Home</a>
         <a href="">About</a>
       </div>
-
+      
       <div class="nav-section" id="social-section">
         <a href="">
           <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -30,14 +30,114 @@
           <i class="fa-brands fa-linkedin" style="color: #000000;"></i>
         </a>
       </div>
-
+      
       <div class="nav-section" id="contact-section">
         <a href="mailto:doretg.t@gmail.com" class="uppercase">Get in touch</a>
       </div>
     </nav>
   </header>
-
-
   
+  
+  <main class="grow relative">
+
+    <article data-index="0" data-status="active">
+      <div class="image-section article-section">
+        <img src="https://picsum.photos/id/1025/600/400" alt="">
+      </div>
+      <div class="desc-section article-section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur illo voluptates enim maiores non aliquid sint officiis ratione expedita ducimus neque aspernatur mollitia, iure doloribus magnam deleniti eum ab!
+        Velit impedit beatae nesciunt commodi facilis minus, debitis, perferendis, corporis placeat fugit animi eum recusandae et ducimus mollitia distinctio provident. Dolore nihil eos expedita tempore ab nam quos ipsam possimus!
+      </div>
+      <div class="title-section article-section"></div>
+      <div class="article-nav-section article-section flex justify-center items-center gap-3 text-6xl font-thin">
+        <button class="article-nav-btn" type="button" onclick="handleLeftClick()">
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+        </button>
+        <button class="article-nav-btn" type="button" onclick="handleRightClick()">
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+        </button>
+      </div>
+    </article>
+
+    <article data-index="1" data-status="inactive">
+      <div class="image-section article-section">
+        <img src="https://picsum.photos/id/1020/600/400" alt="">
+      </div>
+      <div class="desc-section article-section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur illo voluptates enim maiores non aliquid sint officiis ratione expedita ducimus neque aspernatur mollitia, iure doloribus magnam deleniti eum ab!
+        Velit impedit beatae nesciunt commodi facilis minus, debitis, perferendis, corporis placeat fugit animi eum recusandae et ducimus mollitia distinctio provident. Dolore nihil eos expedita tempore ab nam quos ipsam possimus!
+      </div>
+      <div class="title-section article-section"></div>
+      <div class="article-nav-section article-section flex justify-center items-center gap-3 text-6xl font-thin">
+        <button class="article-nav-btn" type="button" onclick="handleLeftClick()">
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+        </button>
+        <button class="article-nav-btn" type="button" onclick="handleRightClick()">
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+        </button>
+      </div>
+    </article>
+
+
+    <article data-index="2" data-status="inactive">
+      <div class="image-section article-section">
+        <img src="https://picsum.photos/id/598/600/400" alt="">
+      </div>
+      <div class="desc-section article-section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur illo voluptates enim maiores non aliquid sint officiis ratione expedita ducimus neque aspernatur mollitia, iure doloribus magnam deleniti eum ab!
+        Velit impedit beatae nesciunt commodi facilis minus, debitis, perferendis, corporis placeat fugit animi eum recusandae et ducimus mollitia distinctio provident. Dolore nihil eos expedita tempore ab nam quos ipsam possimus!
+      </div>
+      <div class="title-section article-section"></div>
+      <div class="article-nav-section article-section flex justify-center items-center gap-3 text-6xl font-thin">
+        <button class="article-nav-btn" type="button" onclick="handleLeftClick()">
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+        </button>
+        <button class="article-nav-btn" type="button" onclick="handleRightClick()">
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+        </button>
+      </div>
+    </article>
+
+
+    <article data-index="3" data-status="inactive">
+      <div class="image-section article-section">
+        <img src="https://picsum.photos/id/642/600/400" alt="">
+      </div>
+      <div class="desc-section article-section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur illo voluptates enim maiores non aliquid sint officiis ratione expedita ducimus neque aspernatur mollitia, iure doloribus magnam deleniti eum ab!
+        Velit impedit beatae nesciunt commodi facilis minus, debitis, perferendis, corporis placeat fugit animi eum recusandae et ducimus mollitia distinctio provident. Dolore nihil eos expedita tempore ab nam quos ipsam possimus!
+      </div>
+      <div class="title-section article-section"></div>
+      <div class="article-nav-section article-section flex justify-center items-center gap-3 text-6xl font-thin">
+        <button class="article-nav-btn" type="button" onclick="handleLeftClick()">
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+        </button>
+        <button class="article-nav-btn" type="button" onclick="handleRightClick()">
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+        </button>
+      </div>
+    </article>
+
+
+    <article data-index="4" data-status="inactive">
+      <div class="image-section article-section">
+        <img src="https://picsum.photos/id/211/600/400" alt="">
+      </div>
+      <div class="desc-section article-section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur illo voluptates enim maiores non aliquid sint officiis ratione expedita ducimus neque aspernatur mollitia, iure doloribus magnam deleniti eum ab!
+        Velit impedit beatae nesciunt commodi facilis minus, debitis, perferendis, corporis placeat fugit animi eum recusandae et ducimus mollitia distinctio provident. Dolore nihil eos expedita tempore ab nam quos ipsam possimus!
+      </div>
+      <div class="title-section article-section"></div>
+      <div class="article-nav-section article-section flex justify-center items-center gap-3 text-6xl font-thin">
+        <button class="article-nav-btn" type="button" onclick="handleLeftClick()">
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+        </button>
+        <button class="article-nav-btn" type="button" onclick="handleRightClick()">
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+        </button>
+      </div>
+    </article>
+  </main>
+  <script src="js/projects.js"></script>
 </body>
 </html>
